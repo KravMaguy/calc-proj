@@ -9,8 +9,8 @@ body {
 
 .calc-parent {
 	display: grid;
-	margin-right: 30vw;
-	margin-left: 30vw;
+	width: 200px;
+	margin-left: calc(50vw - 100px);
 	font-size: 30px;
 	grid-template-areas: 
 	"display display display display"
@@ -145,4 +145,12 @@ body {
 	padding: 5px;
 	color: white;
 	background-color: orange;
+}
+
+.calc-btn:hover {
+	cursor: pointer;
+}
+.calc-btn:active {
+	color: white;
+	background-color: black !important;
 }
