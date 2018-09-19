@@ -47,6 +47,7 @@ body {
 	grid-area: divide;
 	border: 1px solid black;
 	padding: 5px;
+	color: white;
 	background-color: orange;
 }
 #calc-zero {
@@ -79,6 +80,7 @@ body {
 	grid-area: multiply;
 	border: 1px solid black;
 	padding: 5px;
+	color: white;
 	background-color: orange;
 }
 #calc-four {
@@ -103,6 +105,7 @@ body {
 	grid-area: minus;
 	border: 1px solid black;
 	padding: 5px;
+	color: white;
 	background-color: orange;
 }
 #calc-one {
@@ -127,6 +130,7 @@ body {
 	grid-area: plus;
 	border: 1px solid black;
 	padding: 5px;
+	color: white;
 	background-color: orange;
 }
 #calc-decimal {
@@ -139,5 +143,6 @@ body {
 	grid-area: equals;
 	border: 1px solid black;
 	padding: 5px;
+	color: white;
 	background-color: orange;
 }
