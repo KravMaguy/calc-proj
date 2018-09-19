@@ -38,6 +38,7 @@ body {
 }
 #calc-backspace {
 	grid-area: backspace;
+	font-size: 25px;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
