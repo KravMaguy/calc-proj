@@ -148,8 +148,6 @@ body {
 
 .calc-btn:hover {
 	cursor: pointer;
-}
-.calc-btn:active {
 	color: white;
 	background-color: black !important;
 }
