@@ -30,7 +30,7 @@ body {
 #calc-display {
 	grid-area: display;
 	border: 1px solid black;
-	width: 200px;
+	width: 200px; /* Prevents display widening*/
 	padding: 10px;
 	text-align: right;
 	font-size: 45px;
