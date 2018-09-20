@@ -4,6 +4,13 @@ body {
 	font-family: Roboto, sans-serif;
 	padding: auto;
 	text-align: center; /* Centers body */
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 .calc-parent {
@@ -39,7 +46,7 @@ body {
 	grid-area: backspace;
 	font-size: 25px;
 	border: 1px solid black;
-	padding: 5px;
+	padding-top: 5px;
 	background-color: lightgray;
 }
 #calc-divide {
