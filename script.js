@@ -27,14 +27,14 @@ var calcOperatorBtns = document.getElementsByClassName('calc-operator');
 /* clickObj automatically passes click event to the function*/
 var updateDisplayVal = function(clickObj) { 
 	/* If '8' is clicked, then btnText = 8 */
-	var btnText = clickObj.target.innerText;
+	var btnText = clickObj.target.innerHTML;
 	/* Check display if 0, then clear it and add numbers to it*/
 	if(displayVal === '0'){
 		displayVal = '';
 	}
 
 	displayVal += btnText;
-	displayValElement.innerText = displayVal;
+	displayValElement.innerHTML = displayVal;
 }
 
 for(var i=0; i < calcNumBtns.length; i++) {
@@ -43,3 +43,9 @@ for(var i=0; i < calcNumBtns.length; i++) {
 /*for(let i=0; i < calcOperatorBtns.length; i++) {
 	calcOperatorBtns[i].addEventListener('click', performOperation, false);
 }*/
+
+clearBtn.onclick = () => {
+	displayVal = '0'
+	evalStringArray = [];
+	displayValElement.innerHTML = displayVal;
+}
