@@ -57,13 +57,31 @@ var performOperation = (clickObj) => {
 			break;
 		case '=':
 			evalStringArray.push(displayVal);
-			var evaluation = eval(evalStringArray.join(''));
-			displayVal = evaluation + ''; /*As a string??*/
-			displayValElement.innerText = displayVal;
-			evalStringArray = [];
-			break;
+			const length=evalStringArray.length
+			let possibleOperands=evalStringArray.slice(1,length-2)
+			if(possibleOperands.length>=2&&evalStringArray[length-2]!='-'&&containsOnly(['/','-','+','*','÷'],possibleOperands)){
+			 let newStringArray=[evalStringArray.slice(0,1) , evalStringArray.slice(length-2, length)].flat()
+			 console.log(newStringArray, 'newStringArray')
+			 console.log(possibleOperands, 'possibleOperands')
+					var evaluation = eval(newStringArray.join(''));
+					displayVal = evaluation + ''; /*As a string??*/
+					displayValElement.innerText = displayVal;
+					evalStringArray = [];
+				break;
+			} else {
+				var evaluation = eval(evalStringArray.join(''));
+				displayVal = evaluation + ''; /*As a string??*/
+				displayValElement.innerText = displayVal;
+				evalStringArray = [];
+				break;
+			}			
 		}
-}
+	}
+
+	function containsOnly(array1, array2){
+		console.log('arguments 1',arguments[1])
+		return array2.every(elem => array1.includes(elem))
+	  }
 
 /* Places click event on numbers that triggers updateDisplayVal()*/
 for(var i=0; i < calcNumBtns.length; i++) {
