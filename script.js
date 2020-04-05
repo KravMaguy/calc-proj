@@ -1,8 +1,8 @@
 
-var decimalBtn = document.getElementById('calc-decimal');
-var clearBtn = document.getElementById('calc-clear');
+var decimalBtn = document.getElementById('decimal');
+var clearBtn = document.getElementById('clear');
 var backspaceBtn = document.getElementById('calc-backspace');
-var displayValElement = document.getElementById('calc-display');
+var displayValElement = document.getElementById('display');
 
 var displayVal = '0'; /*Simulates the zero on default*/
 var pendingVal; /* Undefined. '5+3' then 3 would be displayed while 5 is pendingVal*/

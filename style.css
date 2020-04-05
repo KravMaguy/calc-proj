@@ -27,7 +27,7 @@ body {
 	"zeroo 	 	 zeroo 		decimal	      equals";
 }
 
-#calc-display {
+#display {
 	grid-area: display;
 	border: 1px solid black;
 	width: 200px; /* Prevents display widening*/
@@ -37,7 +37,7 @@ body {
 	color: white;
 	background-color: black;
 }
-#calc-clear {
+#clear {
 	grid-area: AC;
 	border: 1px solid black;
 	padding: 5px;
@@ -50,14 +50,14 @@ body {
 	padding-top: 5px;
 	background-color: lightgray;
 }
-#calc-divide {
+#divide {
 	grid-area: divide;
 	border: 1px solid black;
 	padding: 5px;
 	color: white;
 	background-color: orange;
 }
-#calc-zero {
+#zero {
 	grid-area: zeroo;
 	border: 1px solid black;
 	text-align: right;
@@ -65,88 +65,88 @@ body {
 	padding-right: 15%;
 	background-color: lightgray;
 }
-#calc-seven {
+#seven {
 	grid-area: seven;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-eight {
+#eight {
 	grid-area: eight;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-nine {
+#nine {
 	grid-area: nine;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-multiply {
+#multiply {
 	grid-area: multiply;
 	border: 1px solid black;
 	padding: 5px;
 	color: white;
 	background-color: orange;
 }
-#calc-four {
+#four {
 	grid-area: four;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-five {
+#five {
 	grid-area: five;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-six {
+#six {
 	grid-area: six;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-minus {
+#subtract {
 	grid-area: minus;
 	border: 1px solid black;
 	padding: 5px;
 	color: white;
 	background-color: orange;
 }
-#calc-one {
+#one {
 	grid-area: one;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-two {
+#two {
 	grid-area: two;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-three {
+#three {
 	grid-area: three;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-plus {
+#add {
 	grid-area: plus;
 	border: 1px solid black;
 	padding: 5px;
 	color: white;
 	background-color: orange;
 }
-#calc-decimal {
+#decimal {
 	grid-area: decimal;
 	border: 1px solid black;
 	padding: 5px;
 	background-color: lightgray;
 }
-#calc-equals {
+#equals {
 	grid-area: equals;
 	border: 1px solid black;
 	padding: 5px;
