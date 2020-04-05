@@ -31,28 +31,28 @@ var performOperation = (clickObj) => {
 			pendingVal = displayVal;
 			displayVal = '0';
 			displayValElement.innerText = displayVal;
-			evalStringArray.push(pendingVal);
+			if(pendingVal!=0){evalStringArray.push(pendingVal);}
 			evalStringArray.push('+');
 			break;
 		case '-':
 			pendingVal = displayVal;
 			displayVal = '0';
 			displayValElement.innerText = displayVal;
-			evalStringArray.push(pendingVal);
+			if(pendingVal!=0){evalStringArray.push(pendingVal);}
 			evalStringArray.push('-');
 			break;
 		case 'x':
 			pendingVal = displayVal;
 			displayVal = '0';
 			displayValElement.innerText = displayVal;
-			evalStringArray.push(pendingVal);
+			if(pendingVal!=0){evalStringArray.push(pendingVal);}
 			evalStringArray.push('*');
 			break;
 		case '÷':
 			pendingVal = displayVal;
 			displayVal = '0';
 			displayValElement.innerText = displayVal;
-			evalStringArray.push(pendingVal);
+			if(pendingVal!=0){evalStringArray.push(pendingVal);}
 			evalStringArray.push('/');
 			break;
 		case '=':
