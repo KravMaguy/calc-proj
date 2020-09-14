@@ -69,6 +69,16 @@ var performOperation = (clickObj) => {
 					evalStringArray = [];
 				break;
 			} else {
+				console.log(evalStringArray, 'evalstringAra')
+				let firstNum=evalStringArray.shift()
+				let lastNum=evalStringArray.pop()
+				console.log(firstNum, "firstNumber")
+				console.log(lastNum, "lastNum")
+				evalStringArray=[...new Set(evalStringArray)]
+				evalStringArray.push(lastNum)
+				evalStringArray.unshift(firstNum)
+				console.log(evalStringArray, 'evalstringAra after')
+
 				var evaluation = eval(evalStringArray.join(''));
 				displayVal = evaluation + ''; /*As a string??*/
 				displayValElement.innerText = displayVal;
